@@ -17,6 +17,7 @@ public:
   const Reader& reader() const;
   Writer& writer();
   const Writer& writer() const;
+  uint64_t capacity() const {return capacity_;}
 
   void set_error() { error_ = true; };       // Signal that the stream suffered an error.
   bool has_error() const { return error_; }; // Has the stream had an error?
